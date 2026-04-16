@@ -1,9 +1,17 @@
-start = int(input("B son:"))
-end = int(input("T son:"))
+from random import randint
 
-def nimadir(start, end):
-    for i in range(start, end):
-        if i % 2 == 0:
-            print(f"Juft Son: {i}")
-        
-nimadir(start,end)        
+son = randint(1000,9999)
+
+name = str(input('Mijoznoi ismi: '))
+phone = str(input('Mijozni nomeri: '))
+
+print(f"Sizning kodingiz: {son}")
+
+def login(name,phone):
+    cod = int(input('Kodingizni kiriting: '))
+    if son == cod:
+        with open('matn.txt',"a") as f:
+            f.write(f"\nismi: {name}\nnomeri: {phone}")
+            print("Xush kelibsiz")
+            
+login(name,phone)            
