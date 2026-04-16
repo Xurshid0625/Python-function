@@ -1,2 +1,3 @@
-Mijoznoi ismi: Xurshid
-Mijozni nomeri: 881888915
+
+ismi: Kamola
+nomeri: 981888915

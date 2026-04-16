@@ -1,26 +1,9 @@
-# def work():
-    
-#     print("Python is working!")
-    
-# work()
+start = int(input("B son:"))
+end = int(input("T son:"))
 
-# def job():
-    
-#     print("Python is working!")
-    
-# job()
-
-# def text(age,name):
-    
-#     print(age,name)
-    
-    
-# text(25,"John")
-# a = "Hello, World!"
-# def job(name,year):
-    
-#     print(f"mijozname:{name},\n mijozage:{2026 - year}\n mujozni yili:{year}\n")
-#     print(a)
-
-# job("John",1990)
-# job("Alice",1985) 
+def nimadir(start, end):
+    for i in range(start, end):
+        if i % 2 == 0:
+            print(f"Juft Son: {i}")
+        
+nimadir(start,end)        
