@@ -1,17 +1,9 @@
-from random import randint
-
-son = randint(1000,9999)
-
-name = str(input('Mijoznoi ismi: '))
-phone = str(input('Mijozni nomeri: '))
-
-print(f"Sizning kodingiz: {son}")
-
-def login(name,phone):
-    cod = int(input('Kodingizni kiriting: '))
-    if son == cod:
-        with open('matn.txt',"a") as f:
-            f.write(f"\nismi: {name}\nnomeri: {phone}")
-            print("Xush kelibsiz")
+def free(*ages):
+    for i in ages:
+        
+        if i % 2 != 0:
+            print(f"toq son: {i}")
+        else:
+            print(f"juft son: {i}")
             
-login(name,phone)            
+free(1,2,3,4,5,6,7,8,9,10)            
